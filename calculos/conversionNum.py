@@ -1,5 +1,6 @@
 class ConvertidorNumero:
 
+    @staticmethod
     def obtenerCaracter(numBuscado):
         tamNum = len(numBuscado)
 
@@ -8,12 +9,13 @@ class ConvertidorNumero:
                 print(f"La posición es {i}")
                 return i       
 
+    @staticmethod
     def eliminarCaracter(cadena, posicion):
         primerNum = cadena[:posicion]
         segundoNum = cadena[posicion + 1:]
         return primerNum, segundoNum
 
-
+    @staticmethod
     def convertirAFloat(num1, num2):
         numCompleto = float(f"{num1}.{num2}")
         return numCompleto

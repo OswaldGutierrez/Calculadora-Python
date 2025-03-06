@@ -1,24 +1,28 @@
 class Operaciones:
     
+    @staticmethod
     def devolverNumEntero(num):
         if num %1 != 0:
             return num
         else: 
             return int(num)
-
+        
+    @staticmethod
     def opSumar(num1, num2):
         resultado = num1 + num2
         return Operaciones.devolverNumEntero(resultado)
         
-
+    @staticmethod
     def opRestar(num1, num2):
         resultado = num1 - num2
         return Operaciones.devolverNumEntero(resultado)
 
+    @staticmethod
     def opMultiplicar(num1, num2):
         resultado = num1 * num2
         return Operaciones.devolverNumEntero(resultado)
 
+    @staticmethod
     def opDividir(num1, num2):
         resultado = None
         try:
